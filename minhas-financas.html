@@ -146,7 +146,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   onAuthStateChanged(auth, async user=>{
     if(user){
       currentUser=user;
-      document.getElementById('userName').textContent=user.displayName?.split(' ')[0]||'';
+      // username display removed
       await loadData();
       showApp();
       render();
